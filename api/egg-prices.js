@@ -1,3 +1,5 @@
+const scrapeTable = require("../utils/scrapeTable.js");
+
 module.exports = async function handler(req, res) {
   try {
     const data = await scrapeTable("https://www.elmorshdledwagn.com/prices/5", [
