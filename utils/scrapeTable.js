@@ -35,3 +35,5 @@ async function scrapeTable(url, fields = []) {
 
   return rows;
 }
+
+module.exports = scrapeTable;
