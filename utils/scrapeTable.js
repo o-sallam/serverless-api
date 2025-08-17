@@ -12,7 +12,7 @@ async function scrapeTable(url, fields = []) {
   const $ = cheerio.load(data);
 
   const rows = [];
-  $("table.table tbodgsmy tr").each((i, elem) => {
+  $("table.table tbody tr").each((i, elem) => {
     const tds = $(elem).find("td");
 
     // خريطة الأعمدة المتاحة
